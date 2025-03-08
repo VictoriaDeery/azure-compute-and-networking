@@ -3,7 +3,7 @@
 </p>
 
 <h1>Azure Computing and Networking</h1>
-This tutorial outlines how to create Virtual Networks and Subnets, Virtual Machines, and Network Security Groups.<br />
+This tutorial outlines how to create Virtual Networks and Subnets, Virtual Machines, and Network Security Groups. It looks at ICMP traffic between  the two Virtual Machines. <br />
 
 
 <h2>Video Demonstration</h2>
@@ -60,7 +60,7 @@ This tutorial outlines how to create Virtual Networks and Subnets, Virtual Machi
 </p>
 <br />
 
-<h2>Use Steps</h2>
+<h2>ICMP traffic between  the two Virtual Machines Observation Steps</h2>
 
 <p>
   1. Use Remote Desktop to connect to the Windows VM
