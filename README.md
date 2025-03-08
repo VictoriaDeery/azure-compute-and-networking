@@ -13,7 +13,7 @@ This tutorial outlines how to create Virtual Networks and Subnets, Virtual Machi
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure
-  - Virtual Machines(Windows and Linux[Ubuntu]/Compute
+  - Virtual Machines (Windows and Linux[Ubuntu])
   - Azure Network Security Groups (Firewall Resource)
 - Remote Desktop
 - Internet Information Services (IIS)
