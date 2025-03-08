@@ -2,8 +2,8 @@
 <img src="[https://logos-world.net/wp-content/uploads/2021/02/Microsoft-Azure-Symbol.png]" alt="Azure logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+<h1>Azure Computing and Networking</h1>
+This tutorial outlines how to create Virtual Networks and Subnets, Virtual Machines, and Network Security Groups.<br />
 
 
 <h2>Video Demonstration</h2>
