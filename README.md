@@ -1,5 +1,5 @@
 <p align="center">
-<img src="[https://i.imgur.com/Clzj7Xs.png](https://logos-world.net/wp-content/uploads/2021/02/Microsoft-Azure-Symbol.png)" alt="Azure logo"/>
+<img src="[https://logos-world.net/wp-content/uploads/2021/02/Microsoft-Azure-Symbol.png]" alt="Azure logo"/>
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
@@ -12,7 +12,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure
+  - Virtual Machines(Windows and Linux[Ubuntu]/Compute
+  - Azure Network Security Groups (Firewall Resource)
 - Remote Desktop
 - Internet Information Services (IIS)
 
