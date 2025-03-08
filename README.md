@@ -24,7 +24,7 @@ This tutorial outlines how to create Virtual Networks and Subnets, Virtual Machi
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
+- Azure Account
 - Item 2
 - Item 3
 - Item 4
