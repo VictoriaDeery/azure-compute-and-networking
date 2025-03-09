@@ -79,6 +79,7 @@ In wireshark, select "ethernet," and then click the shark fin icon below "file" 
 
   <img src="https://github.com/user-attachments/assets/6025a801-4619-4587-b9f8-c2e2838efc09" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   <p>
+    <p>
 3. Recall the ping uses ICMP to test connectivity between devices. Since there is constant traffic, filtering for ICMP makes it easier to see this traffic in wireshark. So in the search bar above the running numbers, above the column heades, next to the bookmark icon, where it says "Apply a display filter," type "icmp" and hit enter so that we only see ICMP (ping) traffic.
 </p>
 Next retreive the private IP address of the Linux VM from azure and ping it from the Windows 10 VM power shell by typing ping followed by the linux VM private IP address. Notice is wireshark that there are requests and replies.
