@@ -79,23 +79,28 @@ In wireshark, select "ethernet," and then click the shark fin icon below "file" 
 
 <p>
   3. Filter for ICMP traffic. The picture belows shows ping executed using ICMP, confirming a connection between the 2 VMs created. 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
   <img width="704" alt="image" src="https://github.com/user-attachments/assets/6025a801-4619-4587-b9f8-c2e2838efc09" />
-3. Recall the ping uses ICMP to test connectivity between devices. 
+  <p>
+3. Recall the ping uses ICMP to test connectivity between devices. Since there is constant traffic, filtering for ICMP makes it easier to see this traffic in wireshark. So in the search bar above the running numbers, above the column heades, next to the bookmark icon, where it says "Apply a display filter," type "icmp" and hit enter so that we only see ICMP (ping) traffic.
 </p>
+Next retreive the private IP address of the Linux VM from azure and ping it from the Windows 10 VM power shell by typing ping followed by the linux VM private IP address. Notice is wireshark that there are requests and replies.
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+4. Looking Deeper
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
   <img width="660" alt="image" src="https://github.com/user-attachments/assets/6e4ab849-0958-4139-9ccd-aebec5887f78" />
-ethernet II info
+
 </p>
+4.Expanding "Ethernet II" shows source and destination MAC addresses, layer 2 addressing in the OSI Model. The VM appears to be uniquely sequential, seeing as the manufacturer cannot burn a MAC address onto software. 
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Expanding "Internet Protocol" shows source and destination private IP addresses, the network layer 3 in the OSI model
 </p>
+Expanding "Internet Control Message Protocol," ICMP, can even show you the payload of the ping, including the data sent and how many bytes it was.
+</p>
+5. In summary, Use the Windows public IP to sign into Remote Desktop>Use wireshark to filter ICMP>retreive Linux private IP address> Open Windows VM powershell then type ping follwed by the Linux VM private IP> if wireshark shows requests and replies, the two devices are connected
 <br />
 
 <h2>Configure a Firewall (Network Security Group) Steps</h2>
