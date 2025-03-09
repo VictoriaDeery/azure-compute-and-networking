@@ -28,10 +28,7 @@ This tutorial outlines how to create Virtual Networks and Subnets, Virtual Machi
 <h2>List of Prerequisites</h2>
 
 - Azure Account
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Each Section below builds off the previous sections above it
 
 <h2>Creation Steps</h2>
 
@@ -71,7 +68,7 @@ This tutorial outlines how to create Virtual Networks and Subnets, Virtual Machi
 </p>
 2. Install WireShark, a protocol analyzer aka a packet sniffer, to visualize network traffic
 <p>
-  <img width="672" alt="image" src="https://github.com/user-attachments/assets/228f4e4e-6996-4216-a9fc-cc0c903b78c7" />
+  <img src="https://github.com/user-attachments/assets/228f4e4e-6996-4216-a9fc-cc0c903b78c7" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
 2. On the Windows VM, open a brower tab, search "www.wireshark.org", select "download," then click the x64 installer. Once installed, open the fiile. selecct "yes" and "noted" through the installation process, making sure the "install Npcap" is selected when the page presents during the installation; USB cap is not needed at this time. select "agree" without selecting any of the 3 boxes. select "install," "next," and "finish." Close the web browser and then in the Windows VM Windows search bar, search and select "wireshark." 
 </p>
@@ -80,7 +77,7 @@ In wireshark, select "ethernet," and then click the shark fin icon below "file" 
 <p>
   3. Filter for ICMP traffic. The picture belows shows ping executed using ICMP, confirming a connection between the 2 VMs created. 
 
-  <img width="704" alt="image" src="https://github.com/user-attachments/assets/6025a801-4619-4587-b9f8-c2e2838efc09" />
+  <img src="https://github.com/user-attachments/assets/6025a801-4619-4587-b9f8-c2e2838efc09" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   <p>
 3. Recall the ping uses ICMP to test connectivity between devices. Since there is constant traffic, filtering for ICMP makes it easier to see this traffic in wireshark. So in the search bar above the running numbers, above the column heades, next to the bookmark icon, where it says "Apply a display filter," type "icmp" and hit enter so that we only see ICMP (ping) traffic.
 </p>
@@ -91,7 +88,7 @@ Next retreive the private IP address of the Linux VM from azure and ping it from
 <br />
 
 
-  <img width="660" alt="image" src="https://github.com/user-attachments/assets/6e4ab849-0958-4139-9ccd-aebec5887f78" />
+  <img src="https://github.com/user-attachments/assets/6e4ab849-0958-4139-9ccd-aebec5887f78" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
 </p>
 4.Expanding "Ethernet II" shows source and destination MAC addresses, layer 2 addressing in the OSI Model. The VM appears to be uniquely sequential, seeing as the manufacturer cannot burn a MAC address onto software. 
@@ -104,28 +101,42 @@ Expanding "Internet Control Message Protocol," ICMP, can even show you the paylo
 <br />
 
 <h2>Configure a Firewall (Network Security Group) Steps</h2>
-<img width="554" alt="image" src="https://github.com/user-attachments/assets/5c4f3a0b-97ad-43fc-a503-e97dba283447" />
+<p>
+  
+</p>
+<img src="https://github.com/user-attachments/assets/5c4f3a0b-97ad-43fc-a503-e97dba283447" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 linux network security group
-
-<img width="594" alt="image" src="https://github.com/user-attachments/assets/b5e1ee94-d49c-428c-93d8-33da9924f7e4" />
+</p>
+</p>
+<img src="https://github.com/user-attachments/assets/b5e1ee94-d49c-428c-93d8-33da9924f7e4" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 make icmp blocking rule
-
-<img width="572" alt="image" src="https://github.com/user-attachments/assets/c4567250-ee2f-4a1e-9c77-35949a0083f8" />
+</p>
+</p>
+<img src="https://github.com/user-attachments/assets/c4567250-ee2f-4a1e-9c77-35949a0083f8" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 changes from reply request in wireshark to requests only. poershell requests time out bc linux vm network security group block
-
-
+</p>
+</p>
 
 
 pt 3
-<img width="531" alt="image" src="https://github.com/user-attachments/assets/68c16097-7186-4e91-928a-3a442557fdf2" />
+</p>
+<img src="https://github.com/user-attachments/assets/68c16097-7186-4e91-928a-3a442557fdf2" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 connected to linux vm via ssh for admining their comp
-
-<img width="580" alt="image" src="https://github.com/user-attachments/assets/84e2808d-ce62-4255-8054-ef345d651f64" />
+</p>
+</p>
+<img src="https://github.com/user-attachments/assets/84e2808d-ce62-4255-8054-ef345d651f64" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 hmmm
-
-<img width="549" alt="image" src="https://github.com/user-attachments/assets/3875084e-11be-4fa0-842f-74e1547a740c" />
+</p>
+</p>
+<img src="https://github.com/user-attachments/assets/3875084e-11be-4fa0-842f-74e1547a740c" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 workaround to show dhscp steps using a file
-
+</p>
 ---
 dns
 
